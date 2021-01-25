@@ -27,14 +27,29 @@
 
 <body>
   <!-- ========== HEADER ========== -->
-  <header id="headerWithDropdown headerPrimary" class="header header-white-nav-links-lg">
+  <header id="header" class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide header-change-logo-lg "
+    data-hs-header-options='{
+      "fixMoment": 100,
+      "fixEffect": "slide"
+    }'
+    data-header-fix-moment="100">
     <div class="header-section header-section bg-dark">
       <div id="logoAndNavWithDropdown" class="container">
         <!-- Nav -->
-        <nav class="js-mega-menu navbar navbar-expand-lg pt-1 pb-1">
+        <nav class="js-mega-menu navbar navbar-expand-lg">
           <!-- Logo -->
-          <a class="navbar-brand" href="index.html" aria-label="Front">
-            <img class="w-80" src="../assets/img/logos/ceres-logo.png" alt="Logo">
+          <!-- Default Logo -->
+          <a class="navbar-brand navbar-brand-default" href="../../html/index.html" aria-label="Front">
+            <!-- <img src="../assets/svg/logos/logo-white.svg" alt="Logo"> -->
+            <img class="w-100" src="../assets/img/logos/ceres-logo.png" alt="Logo">
+          </a>
+          <!-- <a class="navbar-brand navbar-brand" href="../../html/index.html" aria-label="Front">
+          </a> -->
+          <!-- End Default Logo -->
+
+          <!-- On Scroll Logo -->
+          <a class="w-100 navbar-brand navbar-brand-on-scroll" href="../../html/index.html" aria-label="Front">
+            <img class="w-25 header-navbar-brand-on-scroll" src="../../assets/img/logos/ceres-logowide.png" alt="Logo">
           </a>
           <!-- End Logo -->
         </nav>
